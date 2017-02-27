@@ -1,11 +1,9 @@
 /* 
   File:   main.cpp
   Author: Wilkinson Phan
-  Created on February 26, 2017, 3:01 PM
-  Purpose:  Modify PracProb2 to contain a logic error, by changing 
- *          the multiplication "*" to a divide "/", then when asked 
- *          for the number of peas in a pod input "0" to notice a 
- *          run-time error, because of dividing by zero. 
+  Created on February 26, 2017, 5:41 PM
+  Purpose:  Modify PracProb1 to contain a logic error by exchanging
+ *          the multiplication "*" with an addition "+".  
  */
 
 //System Libraries
@@ -27,16 +25,14 @@ int main(int argc, char** argv) {
     int number_of_pods, peas_per_pod, total_peas;
     
     //Input values
-    cout << "Hello\n";
     cout << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
     cin >> number_of_pods;
     cout << "Enter the number of peas in a pod:\n";
-    cout << "(input '0' for error message)\n";
     cin >> peas_per_pod;
     
     //Process by mapping inputs to outputs
-    total_peas = number_of_pods/peas_per_pod;
+    total_peas = number_of_pods+peas_per_pod;
     
     //Output values
     cout << "If you have ";
@@ -48,7 +44,6 @@ int main(int argc, char** argv) {
     cout << "you have ";
     cout << total_peas;
     cout << " peas in all the pods.\n";
-    cout << "Good-bye\n";
     
     //Exit stage right!
     return 0;
