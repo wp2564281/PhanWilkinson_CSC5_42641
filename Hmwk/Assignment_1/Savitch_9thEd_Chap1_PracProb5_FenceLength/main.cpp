@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     areaRect = width*height;
     
     //Output values
-    cout << "If you have a rectangle with \n";
+    cout << "If you have a rectangle with\n";
     cout << "a width of ";
     cout << width;
     cout << " ft long\n";
